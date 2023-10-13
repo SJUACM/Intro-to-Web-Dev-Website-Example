@@ -1,0 +1,127 @@
+<!--Tomas's Website Example, Intro to Web Development Lab-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="indexcss.css">
+    <title>SJU Memeifiers Official Website</title>
+</head>
+<body>
+<!--Nav Section-->
+
+<nav id="topnav" class="topnav">
+    <ul class="nav-list">
+        <li>
+            <a href="#welcome-section">About</a>
+        </li>
+        <li>
+            <a href="#meme-gallery">Grand Gallery of Memes</a>
+        <li>
+            <a href="#social-links">Social Links</a>
+        </li>
+    </ul>
+</nav>
+<!--Welcome Section-->
+<section id="welcome-section" class="welcome-section">
+    <h1 class="title">Welcome to the SJU Memeifiers Official Website! Founded in 2023, we are the premier group for memes on SJU's
+        Queens Campus.
+    </h1>
+
+    <div>
+        <h2>Our Mission: We aim to promote creativity, 
+            humor, and community through the creation and sharing of memes.</h2>
+        <h3>Memes. Are. Life.</h3>
+    </div>
+    <ul>
+        <h2>Meet the Memeifiers:</h2>
+        <figure id="em-board" class="em-board">
+            <p>Tomas Santos Yciano, Chief Memeifying Officer (CMO)</p>
+            <img id="image" src="tsy-1.png" alt="Tomas Santos Yciano" height="300" width="300">
+        </figure>
+        
+        <figure id="em-board">
+            <p>Adoni Takos, Vice Memeifier (VM)</p>
+            <img id="image" src="takos-5.jpg" alt="Adoni Takos" height="300" width="300">
+        </figure>
+
+        <figure>
+            <p>Faizan Ahmed, Secretary of Memes (SM) </p>
+            <img id="image" src="faizan-1.jpg" alt="Faizan Ahmed" height="300" width="300">
+        </figure>
+    </ul>
+</section>
+
+<!--Meme Gallery Section-->
+<section id="meme-gallery" class="meme-gallery">
+    <h1>Behold, our grand gallery of MEMES:</h1>
+    <div class="scroll-container">
+        <img class="memes" src="meme-1.jpg" alt="Meme 1 of 10 in Gallery" height="400" width="350">
+        <img class="memes" src="meme-2.png" alt="Meme 2 of 10 in Gallery" height="400" width="350">
+        <img class="memes" src="meme-3.png" alt="Meme 3 of 10 in Gallery" height="400" width="350">
+        <img class="memes" src="meme-4.jpg" alt="Meme 4 of 10 in Gallery" height="400" width="350">
+        <img class="memes" src="meme-5.png" alt="Meme 5 of 10 in Gallery" height="400" width="350">
+        <img class="memes" src="meme-6.png" alt="Meme 6 of 10 in Gallery" height="400" width="350">
+        <img class="memes" src="meme-7.png" alt="Meme 7 of 10 in Gallery" height="400" width="350">
+        <img class="memes" src="meme-8.png" alt="Meme 8 of 10 in Gallery" height="400" width="350">
+        <img class="memes" src="meme-9.png" alt="Meme 9 of 10 in Gallery" height="400" width="350">
+        <img class="memes" src="meme-10.png" alt="Meme 10 of 10 in Gallery" height="400" width="350">
+        <img class="memes" src="bell-go-dong.jpeg" alt="bell-go-dong" height="400" width="350">
+        <img class="memes" src="drive-left-field-castellanos.png" alt="Drive to Left Filed by Castellanos" height="400" width="350">
+        <img class="memes" src="meme-11.png" alt="SJU ACM Memes Explained" height="400" width="350">
+    </div>
+</section>
+
+<!--Social Links Section-->
+<section id="social-links" class="social-links">
+    <h1>Follow us on Social Media!</h1>
+    <div class="social-links-container">
+        <a href="https://www.instagram.com/tomassantos484/" target="_blank" class="social-link">
+            <img src="ig-logo.jpeg" alt="Instagram Logo" height="100" width="100">
+        </a>
+        <a href="https://www.linkedin.com/in/tomas-j-santos-yciano/" target="_blank" class="social-link">
+            <img src="linkedin-logo.png" alt="LinkedIn logo" height="100" width="100">
+        </a>
+        <a href="https://youtu.be/QKr_0DMYV5g?si=AfQeM2OlQ-N3UBOa" target="_blank" class="social-link">
+            <img src="youtube-logo.png" alt="Youtube Logo" height="100" width="100">
+        </a>
+    </div>
+</section>
+
+
+<!--JS Script Example from W3 Schools-->
+<h1>Enjoy this JS Animation Example:</h1>
+<p><button onclick="myMove()">Click HERE!</button></p>
+<div id="myJSContainer">
+    <div id="myAnimation">
+        <script>
+            var id = null;
+            function myMove() {
+              var elem = document.getElementById("myAnimation");   
+              var pos = 0;
+              clearInterval(id);
+              id = setInterval(frame, 10);
+              function frame() {
+                if (pos == 350) {
+                  clearInterval(id);
+                } else {
+                  pos++; 
+                  elem.style.top = pos + 'px'; 
+                  elem.style.left = pos + 'px'; 
+                }
+              }
+            }
+            </script>
+    </div>
+</div>
+
+<!--Footer Section-->
+<footer class="footer">
+    <p>Created by Tomas Santos Yciano, all Memes reserved. SJU ACM, Copyright Free 2023 </p>
+    <p>To use memes, please DM the Chief Memeifying Officer for permission. 
+    </p>
+    <p>You can DM the CMO on Discord here:</p>
+    <a href="https://youtu.be/VZrDxD0Za9I?si=VX7SSw8dCJbIvzLx" target="_blank" class="social-link">
+        <img src="discord-logo.png" alt="discord-logo" height="100" width="100">
+</footer>
+</body>
+</html>
